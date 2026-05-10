@@ -1,0 +1,26 @@
+# ==========================================
+# CLIFF CatAGI Full Pipeline Dependencies
+# ==========================================
+
+# --- Core Mathematical & Matrix Operations ---
+# Required for Topos PSRs, Hankel matrix generation, and SVD restriction gaps
+numpy>=1.24.0
+scipy>=1.10.0
+
+# --- LLM Extraction Engine (Democritus) ---
+# Required for interfacing with the Large Language Model to extract causal triples
+openai>=1.0.0
+pydantic>=2.0.0      # Used to enforce strict JSON schemas for the causal outputs
+python-dotenv>=1.0.0 # Securely loads the OPENAI_API_KEY from environment variables
+
+# --- Data Handling & Graph Structures ---
+# Useful for internal categorical grouping before rendering the Vis.js HTML
+pandas>=2.0.0
+networkx>=3.0.0
+
+# --- Visualization & Templating (Optional but recommended) ---
+# If your visualizer script uses templating to inject JSON into the HTML file
+Jinja2>=3.1.2
+
+# Note: Vis.js is loaded dynamically via CDN in the frontend HTML. 
+# It does not require a Python backend package.
