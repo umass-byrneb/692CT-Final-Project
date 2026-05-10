@@ -123,7 +123,7 @@ python find_bridges.py ./sample_data/penguin_synthesis
 
 ## Theoretical Grounding
 
-This extension is built upon the mathematical frameworks outlined in the *Categories for AGI (CatAGI)* text by :contentReference[oaicite:0]{index=0}.
+This extension is built upon the mathematical frameworks outlined in the *Categories for AGI (CatAGI)* text by Dr. Sridhar Mahadevan.
 
 It programmatically enforces **Topos Causal Models (TCMs)** by treating causal extraction not as a universal graph, but as contextually bound local sections within a topological geometry.
 
